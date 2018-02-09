@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "NexaBold";
+  font-style: normal;
+  src: url("./fonts/Nexa Bold NBC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NexaBlack";
+  font-style: normal;
+  src: url("./fonts/Nexa Black NBC.ttf") format("truetype");
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #9EDBF8;
+}
+
+#backgroundImage {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -100;
+}
+
+#socialContainer {
+	position: absolute;
+	top: 468px;
+	left: 75px;
+	height: 1400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+}
+
+#userImage {
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+#userImage {
+	max-height: 930px;
+}
+
+#label {
+	position: relative; 
+	top: -4px;
+	width: 930px;
+	height: 140px;
+	background-color: #6CAFE2;
+	box-shadow: 0px 2px 30px 0px rgba(0,0,0,.5);
+}
+
+#label p {
+	font-family: 'NexaBlack';
+	font-size: 50px;
+	margin: 44px 40px 0px 40px;
+	color: white;
+	display: inline-block;
+}
+
+#verifiedIcon {
+	position: relative;
+	left: 68px;
+	top: 10px;
+}
+
+#socialIcon {
+	float: right;
+	margin: 38px 37px;
+}
+
+
+#headerImage {
+	position: absolute;
+	top: 85px;
+	left: 75px;
+}
+
+#userMessage, #userMessage2 {
+	position: relative;
+	top: -4px;
+	background-color: rgba(255,255,255,.1);
+	width: 930px;
+	padding: 40px; 
+	font-family: 'NexaBold';
+	font-size: 50px;
+	color: white;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+#userMessage2 {
+	display: none;		
+}
+
+@media (max-height: 1090px) {
+	#backgroundImage {
+		-webkit-transform-origin: left;
+		-ms-transform-origin: left;
+		transform-origin: left;
+
+		-webkit-transform:translateX(960px) translateY(120px) rotate(-90deg);
+		-ms-transform:translateX(960px) translateY(120px) rotate(-90deg);
+		transform: translateX(960px) translateY(120px) rotate(-90deg);
+	}
+
+	#headerImage {
+		top: 191px;
+		left: 937px;
+	}
+
+	#userMessage {
+		display: none;
+	}
+
+	#userMessage2 {
+		display: block;
+		position: absolute;
+		top: 558px;
+		left: 860px;
+		width: 985px;
+	}
+
+	#userImage {
+		top: 75px;
+		left: 75px;
+		width: 791px;
+		max-height: 791px;
+	}
+
+	#label {
+		width: 791px;
+	}
+
+	#socialContainer {
+		top: 0px;
+		width: 791px;
+		height: 1080px;
+	}
+}

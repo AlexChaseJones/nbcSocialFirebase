@@ -31,11 +31,10 @@ app.get('/nbcolympics-landscape', (req, response) => {
 					normalizedItem.styleObj = `height: ${res.height * scale}px`
 				}
 			} else if (imageOrientation === 'portrait') {
-				normalizedItem.styleObj = "height: 930px"
+				normalizedItem.styleObj = "height: 930px; background-color: rgba(255,255,255,.2);"
 			}
 
 			normalizedItem.styleSheet = 'landscape-style.css';
-
 			response.send(template(normalizedItem));
 		})
 	})
@@ -60,11 +59,10 @@ app.get('/nbcolympics-portrait', (req, response) => {
 					normalizedItem.styleObj = `height: ${res.height * scale}px`
 				}
 			} else if (imageOrientation === 'portrait') {
-				normalizedItem.styleObj = "height: 930px"
+				normalizedItem.styleObj = "height: 930px;  background-color: rgba(255,255,255,.2);"
 			}
 
 			normalizedItem.styleSheet = 'portrait-style.css';
-
 			response.send(template(normalizedItem));
 		})
 	})
@@ -93,7 +91,6 @@ app.get('/nbcolympics', (req, response) => {
 			}
 
 			normalizedItem.styleSheet = 'style.css';
-
 			response.send(template(normalizedItem));
 		})
 	})

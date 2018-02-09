@@ -15,7 +15,7 @@ class Juice {
 	}
 
 	getUrl() {
-		const yesterday = moment().add(-1, 'days');
+		const yesterday = moment().add(-2, 'days');
 		const yesterdayFormatted = yesterday.format('YYYY-MM-DD-HH:mm');
 		return `https://www.juicer.io/api/feeds/nbcolympics?starting_at=${yesterdayFormatted}&per=100`
 	}

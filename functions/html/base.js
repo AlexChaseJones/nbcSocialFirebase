@@ -4,7 +4,7 @@ return `
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/${obj.styleSheet}" />
 </head>
 <body>
 	<img id="backgroundImage" src="images/${obj.source}-background.png"/>

@@ -4,6 +4,12 @@
     "rewrites": [{
     	"source": "/nbcolympics",
     	"function": "app"
+    },{
+    	"source": "/nbcolympics-landscape",
+    	"function": "app"
+    },{
+    	"source": "/nbcolympics-portrait",
+    	"function": "app"
     }]
   }
 }

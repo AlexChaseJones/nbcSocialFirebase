@@ -13,6 +13,9 @@
 html, body {
 	margin: 0px;
 	padding: 0px;
+	width: 1080px;
+	height: 1920px;
+	overflow: hidden;
 }
 
 a {
@@ -97,50 +100,4 @@ a {
 
 #userMessage2 {
 	display: none;		
-}
-
-@media (max-height: 1090px) {
-	#backgroundImage {
-		-webkit-transform-origin: left;
-		-ms-transform-origin: left;
-		transform-origin: left;
-
-		-webkit-transform:translateX(960px) translateY(120px) rotate(-90deg);
-		-ms-transform:translateX(960px) translateY(120px) rotate(-90deg);
-		transform: translateX(960px) translateY(120px) rotate(-90deg);
-	}
-
-	#headerImage {
-		top: 191px;
-		left: 937px;
-	}
-
-	#userMessage {
-		display: none;
-	}
-
-	#userMessage2 {
-		display: block;
-		position: absolute;
-		top: 558px;
-		left: 860px;
-		width: 985px;
-	}
-
-	#userImage {
-		top: 75px;
-		left: 75px;
-		width: 791px;
-		max-height: 791px;
-	}
-
-	#label {
-		width: 791px;
-	}
-
-	#socialContainer {
-		top: 0px;
-		width: 791px;
-		height: 1080px;
-	}
-}
+}p

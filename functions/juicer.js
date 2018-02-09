@@ -15,7 +15,7 @@ class Juice {
 	}
 
 	getUrl() {
-		const yesterday = moment().add(-2, 'days');
+		const yesterday = moment().add(-36, 'hours');
 		const yesterdayFormatted = yesterday.format('YYYY-MM-DD-HH:mm');
 		return `https://www.juicer.io/api/feeds/nbcolympics?starting_at=${yesterdayFormatted}&per=100`
 	}
@@ -31,9 +31,9 @@ class Juice {
 		let messageWithTagsRemoved = striptags(node.unformatted_message, [], ' ');
 		let message;
 
-		if (messageWithTagsRemoved.length > 140) {
+		if (messageWithTagsRemoved.length > 100) {
 			let message = Object.assign(messageWithTagsRemoved, {});
-			message = messageWithTagsRemoved.substring(0, 140) + '...';
+			message = messageWithTagsRemoved.substring(0, 100) + '...';
 			message = message.substr(0, Math.min(message.length, message.lastIndexOf(" ")))
 
 			let messageArray = message.split(' ');
